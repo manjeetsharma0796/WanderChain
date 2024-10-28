@@ -5,16 +5,18 @@ npm install
 
 Add this token as manually into your wallet SDU
 
-Contract Address = 0x4a38F2b70eAD0d3fD447B6B28c52A19605dCa6F0
+Contract Address = 0xdF3eBD63A287d8B86782174C9f6CbcA61E404F7C
+
+[Verify WRTC TOKEN](https://testnet.aiascan.com/token/0xdF3eBD63A287d8B86782174C9f6CbcA61E404F7C)
 
 ------------
 
-# About Project WanderChain (Build on Opencampus Chain)
+# About Project WanderChain (Build on AIA TESTNET Chain)
 
 
 - WanderChain: Earn as You Explore
 - Platform Overview:
-    WanderChain is a Web3 platform built on EduChain by OpenCampus, where users earn tokens for sharing reviews of the places they visit. By transforming travel experiences into valuable digital assets, WanderChain makes your adventures rewarding.
+    WanderChain is a Web3 platform built on AIA CHAIN, where users earn tokens for sharing reviews of the places they visit. By transforming travel experiences into valuable digital assets, WanderChain makes your adventures rewarding.
 
 - Blockchain-Powered:
     Utilizing blockchain technology, WanderChain ensures that every review is authentic and transparent. Your travel insights are securely stored and rewarded, fostering trust within the community.
