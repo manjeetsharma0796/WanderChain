@@ -3,7 +3,7 @@
 yarn install 
 npm install
 
-Add this token as manually into your wallet SDU
+Add this token as manually into your wallet WRTC
 
 Contract Address = 0xdF3eBD63A287d8B86782174C9f6CbcA61E404F7C
 
