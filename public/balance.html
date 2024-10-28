@@ -1,56 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Check Your Balance</title>
-    <link rel="stylesheet" href="styless.css" />
-    <script src="wallet.js"></script>
-    <script src="https://unpkg.com/ethers@5.7.2/dist/ethers.umd.min.js"></script>
-  </head>
-  <body>
-    <header>
-      <h1>Account Balance</h1>
-    </header>
 
-    <main>
-      <section class="balance-section">
-        <h2>Your Current Balance</h2>
-        <div style="display: flex; gap: 10px">
-          <p class="bal">WRCT</p>
-          <p id="current-balance" class="bal">5000</p>
-        </div>
-        <!-- Example balance -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Check Your Balance</title>
+  <link rel="stylesheet" href="styless.css" />
+  <!-- <script src="wallet.js"></script> -->
+  <script src="https://unpkg.com/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+</head>
 
-        <label for="deduct-amount">Enter Amount to Withdraw:</label>
-        <input type="number" id="deduct-amount" class="input-field" />
-        <button id="deduct-button" class="button" onclick="withdraw()">
-          Withdraw
-        </button>
+<body>
+  <header>
+    <h1>Account Balance</h1>
+  </header>
 
-        <p id="message"></p>
-        <!-- This will show messages like "Insufficient funds" -->
-      </section>
-    </main>
-    <script src="balance.js"></script>
-  </body>
-  <script>
-    const claimAmtEle = document.getElementById("deduct-amount");
-    const withdraw = () => {
-      console.log("hellooo this is withdraw", claimAmtEle.innerText);
-      const clientAddress = localStorage.getItem("clientAddress");
+  <main>
+    <section class="balance-section">
+      <h2>Your Current Balance</h2>
+      <div style="display: flex; gap: 10px">
+        <p class="bal">WRCT</p>
+        <p id="current-balance" class="bal">5000</p>
+      </div>
+      <!-- Example balance -->
 
-      fetch("/withdraw", {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify({
-          clientAddress,
-          claimAmt: claimAmtEle.value,
-        }),
-      });
-      claimAmtEle.innerText = 0;
-    };
-  </script>
+      <label for="deduct-amount">Enter Amount to Withdraw:</label>
+      <input type="number" id="deduct-amount" class="input-field" />
+      <button id="deduct-button" class="button">
+        Withdraw
+      </button>
+
+      <p id="message"></p>
+      <!-- This will show messages like "Insufficient funds" -->
+    </section>
+  </main>
+  <script src="balance.js"></script>
+</body>
+
 </html>
